@@ -19,7 +19,7 @@ module.exports = {
       copyright: config.copyright
     }
   },
-  pathPrefix: `/gat-vanilla`,
+  pathPrefix: `/vanillaGatsby`,
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
