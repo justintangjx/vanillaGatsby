@@ -1,12 +1,12 @@
 import { pathPrefix } from './data/SiteConfig';
 const config = require("./data/SiteConfig");
 
-const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
+
 
 const regexExcludeRobots = /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/
 
 module.exports = {
-  pathPrefix: config.pathPrefix,
+  pathPrefix: `/vanillaGatsby`,
   siteMetadata: {
     siteUrl: config.siteUrl + pathPrefix,
     rssMetadata: {
@@ -19,7 +19,7 @@ module.exports = {
       copyright: config.copyright
     }
   },
-  pathPrefix: `/vanillaGatsby`,
+  
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
